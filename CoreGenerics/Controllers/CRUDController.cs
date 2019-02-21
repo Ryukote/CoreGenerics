@@ -1,11 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using RespositoryCore;
 using System;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Ryukote.Generics.Web
+namespace CoreGenerics.Web
 {
     [Route("api/[controller]")]
     [ApiController]
