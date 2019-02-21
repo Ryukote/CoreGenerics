@@ -12,8 +12,6 @@ namespace CoreGenerics.Web
         where TModel : class
         where TId : struct
     {
-        private DbContext _context;
-        
         [HttpPost]
         public async Task<IActionResult> Add([FromBody] TModel model)
         {
