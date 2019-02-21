@@ -5,7 +5,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace RespositoryCore
+namespace Ryukote.Generics.Web
 {
     public class Repository<TModel, TId, TDbContext> : IRepository<TModel, TId>
         where TModel : class //TModel is generic model
@@ -19,10 +19,10 @@ namespace RespositoryCore
             _dbContext = dbContext;
         }
 
-        public async Task AddAsync(TModel model)
+        public async Task<int> AddAsync(TModel model)
         {
             await _dbContext.Set<TModel>().AddAsync(model);
-            await _dbContext.SaveChangesAsync();
+            return await _dbContext.SaveChangesAsync();
         }
 
         public async Task DeleteAsync(TId id)
@@ -42,10 +42,10 @@ namespace RespositoryCore
             return await _dbContext.Set<TModel>().Where(condition).ToListAsync();
         }
 
-        public async Task UpdateAsync(TModel model)
+        public async Task<int> UpdateAsync(TModel model)
         {
             _dbContext.Set<TModel>().Update(model);
-            await _dbContext.SaveChangesAsync();
+            return await _dbContext.SaveChangesAsync();
         }
     }
 }

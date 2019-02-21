@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace RespositoryCore
+namespace Ryukote.Generics.Web
 {
     /// <summary>
     /// Generic interface for repository pattern.
@@ -30,7 +30,7 @@ namespace RespositoryCore
         /// </summary>
         /// <param name="model">Generic model.</param>
         /// <returns></returns>
-        Task AddAsync(TModel model);
+        Task<int> AddAsync(TModel model);
         /// <summary>
         /// Delete data from the table asynchronously.
         /// </summary>
@@ -43,6 +43,6 @@ namespace RespositoryCore
         /// <param name="id">Id in a table.</param>
         /// <param name="model">Generic model.</param>
         /// <returns></returns>
-        Task UpdateAsync(TModel model);
+        Task<int> UpdateAsync(TModel model);
     }
 }
