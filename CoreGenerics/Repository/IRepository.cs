@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Ryukote.Generics.Web
+namespace CoreGenerics.Web
 {
     /// <summary>
     /// Generic interface for repository pattern.

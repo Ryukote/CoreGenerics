@@ -5,7 +5,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Ryukote.Generics.Web
+namespace CoreGenerics.Web
 {
     public class Repository<TModel, TId, TDbContext> : IRepository<TModel, TId>
         where TModel : class //TModel is generic model
