@@ -24,7 +24,7 @@ It is very simple. Here is a small code sample that can be a reference for your 
 ```cs
 public class ValuesController : CRUDController<Test, int>
 {
-   public ValuesController(DbContext context)
+   public ValuesController()
    {
        base.OptionsBuilder = new DbContextOptionsBuilder<DbContext>();
        base.OptionsBuilder.UseInMemoryDatabase("TestDb");
