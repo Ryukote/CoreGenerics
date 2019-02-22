@@ -26,7 +26,7 @@ public class ValuesController : CRUDController<Test, int>
 {
    public ValuesController()
    {
-       base.OptionsBuilder = new DbContextOptionsBuilder<DbContext>();
+       base.OptionsBuilder = new DbContextOptionsBuilder<TestDbContext>();
        base.OptionsBuilder.UseInMemoryDatabase("TestDb");
    }
 }
