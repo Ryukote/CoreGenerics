@@ -31,6 +31,12 @@ public class ValuesController : CRUDController<Test, int>
    }
 }
 ```
+And this is the list of URL-s that you get out of the box with inheriting CRUDController class:
+  - api/[controller]/add (POST)
+  - api/[controller]/delete (DELETE)
+  - api/[controller]/getall (GET)
+  - api/[controller]/getby (GET)
+  - api/[controller]/update (PUT)
 
 # You want to support this library?
 If you think this library is great idea and you want to support this, you can help with issues, pull requests and small donations.
