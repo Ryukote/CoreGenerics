@@ -19,7 +19,8 @@ There is no limitation on what domain I will cover, so if you have an idea which
 for that as well.
 
 # How do I use this library?
-It is very simple. Here is a small code sample that can be a reference for your implementations:
+It is very simple. You can use this library as a Nuget package from: https://www.nuget.org/packages/CoreGenerics/ 
+Here is a small code sample that can be a reference for your implementations:
 
 ```cs
 public class ValuesController : CRUDController<Test, int>
