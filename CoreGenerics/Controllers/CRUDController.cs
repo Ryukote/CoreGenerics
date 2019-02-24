@@ -4,7 +4,7 @@ using System;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Ryukote.Generics.Web
+namespace CoreGenerics.Web
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
@@ -12,8 +12,8 @@ namespace Ryukote.Generics.Web
         where TModel : class
         where TId : struct
     {
-        protected DbContextOptionsBuilder OptionsBuilder { get; set; }
-
+        protected DbContextOptionsBuilder OptionsBuilder { get; set }
+        
         [HttpPost]
         [ActionName("Add")]
         public async Task<IActionResult> Add([FromBody] TModel model)
