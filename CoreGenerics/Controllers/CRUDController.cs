@@ -12,7 +12,7 @@ namespace CoreGenerics.Web
         where TModel : class
         where TId : struct
     {
-        protected DbContextOptionsBuilder OptionsBuilder { get; set }
+        protected DbContextOptionsBuilder OptionsBuilder { get; set; }
         
         [HttpPost]
         [ActionName("Add")]
