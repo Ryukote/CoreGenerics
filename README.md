@@ -1,10 +1,6 @@
 # CoreGenerics
 Core generics for: repository pattern and api controllers for CRUD operations
 
-# What is new (version 1.0.1)
-I had minor issues regarding DbContext and methods inside the controller. There was 2 controllers with HttpGet method which cause a
-conflict. I have decided to move all CRUDController methods to be Actions, so each method can be accessed via "api/[controller]/[action]"
-
 # How does it work?
 It is very simple. This library is nothing WOW, cause you are doing those things very often, like: creating repository for your models/DTO
 and exposing those repositories inside your controllers, so you can handle basic CRUD operations.
