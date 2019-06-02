@@ -34,10 +34,7 @@ And this is the list of URL-s that you get out of the box with inheriting CRUDCo
   - api/[controller]/getall (GET)
   - api/[controller]/getby (GET)
   - api/[controller]/update (PUT)
+  
+## Supporting repository 
 
-# You want to support this library?
-If you think this library is great idea and you want to support this, you can help with issues, pull requests and small donations.
-You can do donations with:
-  - BTC on: 322SRqTS3EeKGaVFuo6xsw8e5Xji4QcJR6
-  - ETH on: 0xc06d8766061e0644fb780f38abb1226ba289664c
-  - XRP on: rE1sdh25BJQ3qFwngiTBwaq3zPGGYcrjp1 with destination tag: 59558
+You can support this repository by contributing on it or by sponsoring it.
